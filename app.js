@@ -57,6 +57,7 @@ addMovieButton.addEventListener('click', (elem) => {
 function getSelected(val){
     let row = val.parentNode.parentNode;
     if(val.checked){
+        console.log(val.value)
         localStorage.setItem(val.value, val.checked);
         row.classList.remove('table-danger')
         row.classList.add('table-success')
